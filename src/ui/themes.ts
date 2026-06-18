@@ -10,6 +10,7 @@ import { EMBER_THEME } from "./themes/ember";
 import { GRAPHITE_THEME } from "./themes/graphite";
 import { MIDNIGHT_THEME } from "./themes/midnight";
 import { PAPER_THEME } from "./themes/paper";
+import { TOKYONIGHT_NIGHT_THEME } from "./themes/tokyonight";
 import { withLazySyntaxStyle } from "./themes/syntax";
 import type { AppTheme, ThemeBase } from "./themes/types";
 import { ZENBURN_THEME } from "./themes/zenburn";
@@ -22,6 +23,7 @@ export const TRANSPARENT_BACKGROUND = "transparent";
 export const THEMES: AppTheme[] = [
   GRAPHITE_THEME,
   MIDNIGHT_THEME,
+  TOKYONIGHT_NIGHT_THEME,
   PAPER_THEME,
   EMBER_THEME,
   CATPPUCCIN_LATTE_THEME,

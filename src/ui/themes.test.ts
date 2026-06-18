@@ -132,6 +132,28 @@ describe("themes", () => {
     });
   });
 
+  test("resolves Tokyonight Night by theme id with its official dark palette", () => {
+    const tokyonight = resolveTheme("tokyonight-night", null);
+
+    expect(tokyonight.id).toBe("tokyonight-night");
+    expect(tokyonight.label).toBe("Tokyo Night");
+    expect(tokyonight.appearance).toBe("dark");
+    expect(tokyonight.background).toBe("#0c0e14");
+    expect(tokyonight.panel).toBe("#16161e");
+    expect(tokyonight.panelAlt).toBe("#1a1b26");
+    expect(tokyonight.accent).toBe("#7aa2f7");
+    expect(tokyonight.text).toBe("#c0caf5");
+    expect(tokyonight.syntaxColors).toMatchObject({
+      keyword: "#bb9af7",
+      string: "#9ece6a",
+      comment: "#565f89",
+      number: "#ff9e64",
+      function: "#7aa2f7",
+      property: "#7dcfff",
+      type: "#e0af68",
+    });
+  });
+
   test("withTransparentBackground only swaps painted background fields", () => {
     const theme = resolveTheme("graphite", null);
     const transparent = withTransparentBackground(theme);

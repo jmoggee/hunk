@@ -15,6 +15,7 @@ import type {
 const BUILT_IN_THEME_IDS = [
   "graphite",
   "midnight",
+  "tokyonight-night",
   "paper",
   "ember",
   "catppuccin-latte",

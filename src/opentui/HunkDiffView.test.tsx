@@ -158,6 +158,7 @@ describe("OpenTUI public components", () => {
     expect(HUNK_DIFF_THEME_NAMES).toEqual([
       "graphite",
       "midnight",
+      "tokyonight-night",
       "paper",
       "ember",
       "catppuccin-latte",

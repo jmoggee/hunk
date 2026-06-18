@@ -151,6 +151,7 @@ describe("config resolution", () => {
   test.each([
     "graphite",
     "midnight",
+    "tokyonight-night",
     "paper",
     "ember",
     "catppuccin-latte",
@@ -188,7 +189,7 @@ describe("config resolution", () => {
         env: { HOME: home },
       }),
     ).toThrow(
-      "Expected custom_theme.base to be one of: graphite, midnight, paper, ember, catppuccin-latte, catppuccin-frappe, catppuccin-macchiato, catppuccin-mocha, zenburn.",
+      "Expected custom_theme.base to be one of: graphite, midnight, tokyonight-night, paper, ember, catppuccin-latte, catppuccin-frappe, catppuccin-macchiato, catppuccin-mocha, zenburn.",
     );
   });
 
